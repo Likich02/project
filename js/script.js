@@ -1,17 +1,19 @@
-let incr = 10,
-  decr = 10;
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-// incr++;
-// decr--;
+const personalMomieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  geners: [],
+  privat: false,
+};
 
-console.log(++incr);
-console.log(--decr);
+const a = prompt("Один из послендних просмотренных фильмов?", ""),
+  b = prompt("На сколько оцените его?", ""),
+  c = prompt("Один из послендних просмотренных фильмов?", ""),
+  d = prompt("На сколько оцените его?", "");
 
-console.log(5 % 3);
+personalMomieDB.movies[a] = b;
+personalMomieDB.movies[c] = d;
 
-console.log(2 * 4 === "8");
-
-const isChecked = true,
-  isClose = false;
-
-console.log(isChecked || isClose);
+console.log(personalMomieDB);
